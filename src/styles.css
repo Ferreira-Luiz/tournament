@@ -1,1 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+
+breakpoint-xsmall: 320px;
+breakpoint-small: 544px;
+breakpoint-medium: 768px;
+breakpoint-large: 1012px;
+breakpoint-xlarge: 1280px;
+breakpoint-xxlarge: 1440px;
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0f3743;
+}
+
+::-webkit-scrollbar-track {
+  background: #00eebd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: #ffff;
+}
+
+
+
+:root {
+  font-size: 62.5%;
+  --green: #00EEBD;
+  --dark_shadow: 0 0 0 1px #000,
+    0 30px 30px rgba(0, 0, 0, .07),
+    0 15px 15px rgba(0, 0, 0, .06),
+    0 10px 8px rgba(0, 0, 0, .05),
+    0 4px 4px rgba(0, 0, 0, .04),
+    0 2px 2px rgba(0, 0, 0, .03);
+
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Oxanium', cursive;
+  background-color: #040D17;
+}

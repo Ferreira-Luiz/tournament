@@ -1,0 +1,90 @@
+<section>
+  <div class="section_title">
+    <span>Contact Us</span>
+    <img src="../../../assets/imagem/Rectangle.svg" alt="generic Rectangle">
+  </div>
+
+  <div class="section_container">
+
+    <div class="section_data">
+      <div class="section_info">
+        <div class="box">
+          <span class="title">
+            <img src="../../../assets/imagem/location.svg" alt="location icon">
+            Office Location
+          </span>
+          <span class="description">3rd Floor, Green Park, Bengaluru</span>
+        </div>
+        <div class="box">
+          <span class="title">
+            <img src="../../../assets/imagem/call.svg" alt="phone icon">
+            Contact
+          </span>
+          <span class="description">+91 9876543210</span>
+        </div>
+        <div class="box">
+          <span class="title">
+            <img src="../../../assets/imagem/sms.svg" alt="sms icon">
+            Email
+          </span>
+          <span class="description">@gamingcompany.com</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="form_container">
+      <form [formGroup]="form" (ngSubmit)="sendForm()">
+
+        <div class="group1">
+
+          <div class="box_form">
+            <label for="firstName">First Name*</label>
+            <input type="text" id="firstName" formControlName="firstName" placeholder="First Name">
+            <span *ngIf="form.get('firstName')?.hasError('required') && form.get('firstName')?.touched"
+              class="error-msg">First name is
+              required</span>
+          </div>
+
+          <div class="box_form">
+            <label for="lastName">Last Name*</label>
+            <input type="text" id="lastName" formControlName="lastName" placeholder="Last Name">
+            <span *ngIf="form.get('lastName')?.hasError('required') && form.get('lastName')?.touched"
+              class="error-msg">Last name is
+              required</span>
+          </div>
+
+        </div>
+
+        <div class="group1">
+
+          <div class="box_form">
+            <label for="email">Email*</label>
+            <input type="text" id="email" formControlName="email" placeholder="Email address">
+            <span *ngIf="form.get('email')?.hasError('required') && form.get('email')?.touched" class="error-msg">Email
+              is
+              required</span>
+          </div>
+
+          <div class="box_form">
+            <label for="aboutUs">How did you hear about us?</label>
+            <input type="text" id="aboutUs" formControlName="aboutUs" placeholder="Facebook,Youtube...">
+          </div>
+
+        </div>
+
+        <div class="box_form msg">
+          <label for="message">Message</label>
+          <input type="text" id="message" formControlName="message" placeholder="Write your message">
+        </div>
+
+        <div class="section_btn">
+          <button type="submit">Submit</button>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+
+
+</section>

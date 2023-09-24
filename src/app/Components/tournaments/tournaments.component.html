@@ -1,0 +1,38 @@
+<section>
+  <div class="section_title">
+    <span>Tournaments</span>
+    <img src="../../../assets/imagem/Rectangle.svg" alt="generic Rectangle">
+  </div>
+
+  <div class="tournaments_container">
+    <div class="box" *ngFor="let card of cards">
+      <div class="box_img">
+        <img [src]=card.img alt="">
+      </div>
+      <div class="box_content">
+
+        <span class="title">{{ card.title }}</span>
+        <span class="description">{{ card.date }}</span>
+        <div class="box_info">
+          <div class="box_i">
+            <span>Play mode</span>
+            <span>{{ card.playMode }}</span>
+          </div>
+          <div class="box_i">
+            <span>Platform</span>
+            <span>{{ card.plataform }}</span>
+          </div>
+          <div class="box_i">
+            <span>Prize</span>
+            <span>{{ card.prize }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section_btn">
+    <a class="btn" href="#">View More</a>
+
+  </div>
+
+</section>

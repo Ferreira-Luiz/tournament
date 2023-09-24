@@ -1,0 +1,120 @@
+section {
+  max-width: 140rem;
+  margin: 0 auto;
+
+}
+
+.section_title {
+  display: flex;
+  margin-top: 16rem;
+  margin-bottom: 6.4rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section_title span {
+  font-size: 4rem;
+  font-weight: 700;
+
+}
+
+.section_title img {
+  width: 5rem;
+  height: 4rem;
+}
+
+.tournaments_container {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: auto 2rem;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #071626, #00000000);
+  border-radius: 1rem;
+  box-shadow: var(--dark_shadow);
+
+}
+
+.box_img {
+  margin: 1rem 1rem;
+  max-width: 100%;
+}
+
+.box_img img {
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+.box_content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.box .title {
+  font-size: 2.2rem;
+  color: #F5F5F5;
+}
+
+.box .description {
+  color: #EAEAEA;
+}
+
+
+.box_info {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.4rem;
+}
+
+.box_i {
+  display: flex;
+  flex-direction: column;
+}
+
+.section_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 4.8rem;
+}
+
+.btn {
+  width: 18.7rem;
+  display: inline-block;
+  background: linear-gradient(to bottom, #0A1F35 0%, #0A1F35 100%);
+  color: #fff;
+  padding: 2rem 3.5rem;
+  text-align: center;
+  clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+}
+
+.btn:hover {
+  color: var(--green);
+}
+
+
+@media (max-width: 400px) {
+  .box_content {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box .title {
+    font-size: 1.6rem;
+  }
+
+  .box .description {
+    font-size: 1.4rem;
+  }
+
+}

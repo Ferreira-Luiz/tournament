@@ -1,0 +1,32 @@
+<section>
+
+  <div class="section_title">
+    <span>{{ sectionTitle }}</span>
+    <img src="../../../assets/imagem/Rectangle.svg" alt="generic Rectangle">
+  </div>
+
+
+  <div class="card_container">
+
+    <div class="box" *ngFor="let card of cardData">
+      <div class="box_img">
+        <img [src]=card.img alt="">
+      </div>
+
+      <div class="box_content">
+        <span class="title">{{ card.subtitle }}</span>
+        <span class="description">{{ card.title }}</span>
+        <div class="box_info">
+          <div class="box_i">
+            <span>{{ card.price }}</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section_btn">
+    <a class="btn" [href]='linkUrl'>{{ btnTxt }}</a>
+  </div>
+</section>

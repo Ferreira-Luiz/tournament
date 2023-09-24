@@ -1,0 +1,148 @@
+main {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
+.main_container {
+  position: relative;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.main_txt h1 {
+  font-size: 4.8rem;
+  max-width: 57rem;
+}
+
+.main_txt h1 span {
+  color: var(--green);
+}
+
+.main_txt h1 b {
+  font-size: 6.4rem;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(to bottom right, #144558, #0A1F35);
+  color: #fff;
+  padding: 2rem 3.5rem;
+  text-align: center;
+  clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+}
+
+.btn:hover {
+  color: var(--green);
+}
+
+.main_img {
+  margin-top: 7rem;
+}
+
+.main_img img {
+  position: relative;
+  bottom: -0.5rem;
+}
+
+@media (max-width: 1400px) {
+  .main_txt h1 {
+    font-size: 4rem;
+    max-width: 46rem;
+  }
+
+  .main_txt h1 b {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  main {
+    margin: auto 2rem;
+    gap: 1rem;
+  }
+
+  .main_txt h1 {
+    font-size: 3.6rem;
+    width: 42rem;
+  }
+
+  .main_txt h1 b {
+    font-size: 5.2rem;
+  }
+
+  .main_img img {
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 880px) {
+  .main_container {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .main_txt {
+    text-align: center;
+  }
+
+  .main_txt h1 {
+    font-size: 6rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .main_txt h1 b {
+    font-size: 8rem;
+  }
+
+}
+
+@media(max-width: 544px) {
+  .main_container {
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .main_txt h1 {
+    font-size: 3rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .main_txt h1 b {
+    font-size: 5rem;
+  }
+
+  .main_txt {
+    text-align: start;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    padding: 1.7rem 1.9rem;
+  }
+}
+
+@media(max-width: 400px) {
+  .main_txt {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .main_txt h1 {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+  }
+
+  .main_txt h1 b {
+    font-size: 4rem;
+  }
+}
