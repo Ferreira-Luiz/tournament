@@ -6,7 +6,7 @@
 
   <div class="section_container">
 
-    <div class="section_data">
+    <div class="section_data animateFromLeftContact">
       <div class="section_info">
         <div class="box">
           <span class="title">
@@ -32,10 +32,10 @@
       </div>
     </div>
 
-    <div class="form_container">
+    <div class="form_container ">
       <form [formGroup]="form" (ngSubmit)="sendForm()">
 
-        <div class="group1">
+        <div class="group1 animateFromRightContact">
 
           <div class="box_form">
             <label for="firstName">First Name*</label>
@@ -55,7 +55,7 @@
 
         </div>
 
-        <div class="group1">
+        <div class="group1 animateFromTopContact">
 
           <div class="box_form">
             <label for="email">Email*</label>
@@ -72,7 +72,7 @@
 
         </div>
 
-        <div class="box_form msg">
+        <div class="box_form msg animateFromBottomContact">
           <label for="message">Message</label>
           <input type="text" id="message" formControlName="message" placeholder="Write your message">
         </div>

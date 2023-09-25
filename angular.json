@@ -13,6 +13,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "sweetalert2"
+            ],
             "outputPath": "dist/game",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -28,7 +31,9 @@
               "src/styles.css",
               "node_modules/sweetalert2/src/sweetalert2.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/gsap/dist/gsap.min.js"
+            ]
           },
           "configurations": {
             "production": {

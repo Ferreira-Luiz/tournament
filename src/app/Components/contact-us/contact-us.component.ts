@@ -1,17 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
+import { GsapService } from 'src/app/Shared/Services/gsap.service';
 
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
   styleUrls: ['./contact-us.component.css']
 })
-export class ContactUsComponent {
+export class ContactUsComponent implements OnInit {
   form: FormGroup;
 
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private gsapService: GsapService) {
     this.form = this.fb.group({
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
@@ -20,8 +21,6 @@ export class ContactUsComponent {
       message: ['']
     });
   }
-
-
 
   sendForm() {
     if(this.form.valid){
@@ -34,6 +33,31 @@ export class ContactUsComponent {
       })
   }
 }
+
+  ngOnInit() {
+    const animateFromLeftContact = document.querySelector('.animateFromLeftContact') as HTMLElement;
+    const animateFromRightContact = document.querySelector('.animateFromRightContact') as HTMLElement;
+    const animateFromTopContact = document.querySelector('.animateFromTopContact') as HTMLElement;
+    const animateFromBottomContact = document.querySelector('.animateFromBottomContact') as HTMLElement;
+
+
+    if (animateFromLeftContact) {
+      this.gsapService.animateFromLeft(animateFromLeftContact);
+    }
+
+    if(animateFromRightContact) {
+      this.gsapService.animateFromRight(animateFromRightContact);
+    }
+
+    if(animateFromTopContact) {
+      this.gsapService.animateFromTop(animateFromTopContact);
+    }
+
+    if(animateFromBottomContact) {
+      this.gsapService.animateFromBottom(animateFromBottomContact);
+    }
+
+  }
 
 }
 

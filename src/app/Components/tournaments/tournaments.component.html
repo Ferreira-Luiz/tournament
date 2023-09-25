@@ -4,14 +4,14 @@
     <img src="../../../assets/imagem/Rectangle.svg" alt="generic Rectangle">
   </div>
 
-  <div class="tournaments_container">
-    <div class="box" *ngFor="let card of cards">
-      <div class="box_img">
+  <div class="tournaments_container animateFromBottomTournaments">
+    <div *ngFor="let card of cards let i = index" class="item box" [attr.data-index]="i">
+      <div class="box_img ">
         <img [src]=card.img alt="">
       </div>
       <div class="box_content">
 
-        <span class="title">{{ card.title }}</span>
+        <span class="title ">{{ card.title }}</span>
         <span class="description">{{ card.date }}</span>
         <div class="box_info">
           <div class="box_i">

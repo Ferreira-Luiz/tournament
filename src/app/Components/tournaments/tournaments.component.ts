@@ -1,12 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, Renderer2, AfterViewInit } from '@angular/core';
 import { Tournaments } from './model/tournaments';
+import { GsapService } from 'src/app/Shared/Services/gsap.service';
 
 @Component({
   selector: 'app-tournaments',
   templateUrl: './tournaments.component.html',
   styleUrls: ['./tournaments.component.css']
 })
-export class TournamentsComponent {
+export class TournamentsComponent implements AfterViewInit {
+
+  constructor(private el: ElementRef, private renderer: Renderer2, private gsapService : GsapService) {}
+
+  ngAfterViewInit() {
+    const elements = this.el.nativeElement.querySelectorAll('.item');
+    elements.forEach((element: any, index: any) => {
+      this.renderer.addClass(element, `item-${index}`);
+    });
+    this.gsapService.animateElement1();
+    this.gsapService.animateElement2();
+    this.gsapService.animateElement3();
+    this.gsapService.animateElement4();
+    this.gsapService.animateElement5();
+    this.gsapService.animateElement6();
+  }
+
+
   imageCSGO = '../../../assets/imagem/CardCsGo.png'
   imagePUBG = '../../../assets/imagem/CardPubg.png'
   imageFREE = '../../../assets/imagem/CardFree.png'
