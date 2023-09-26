@@ -1,6 +1,7 @@
-import { Component, ElementRef, Renderer2, AfterViewInit } from '@angular/core';
-import { Tournaments } from './model/tournaments';
+import { AfterViewInit, Component, ElementRef, Renderer2 } from '@angular/core';
 import { GsapService } from 'src/app/Shared/Services/gsap.service';
+
+import { Tournaments } from './model/tournaments';
 
 @Component({
   selector: 'app-tournaments',

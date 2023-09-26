@@ -1,7 +1,7 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import Swal from 'sweetalert2';
 import { GsapService } from 'src/app/Shared/Services/gsap.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-contact-us',
