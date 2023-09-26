@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
 import { GsapService } from 'src/app/Shared/Services/gsap.service';
@@ -8,7 +8,7 @@ import { GsapService } from 'src/app/Shared/Services/gsap.service';
   templateUrl: './contact-us.component.html',
   styleUrls: ['./contact-us.component.css']
 })
-export class ContactUsComponent implements OnInit {
+export class ContactUsComponent implements AfterViewInit {
   form: FormGroup;
 
 
@@ -34,7 +34,7 @@ export class ContactUsComponent implements OnInit {
   }
 }
 
-  ngOnInit() {
+  ngAfterViewInit() {
     const animateFromLeftContact = document.querySelector('.animateFromLeftContact') as HTMLElement;
     const animateFromRightContact = document.querySelector('.animateFromRightContact') as HTMLElement;
     const animateFromTopContact = document.querySelector('.animateFromTopContact') as HTMLElement;
