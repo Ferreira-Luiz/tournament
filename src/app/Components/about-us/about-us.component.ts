@@ -15,6 +15,7 @@ export class AboutUsComponent implements OnInit {
     const animateFromRightAbout = document.querySelector('.animateFromRightAbout') as HTMLElement;
     const animateFromTopAbout = document.querySelector('.animateFromTopAbout') as HTMLElement;
     const animateFromBottomAbout = document.querySelector('.animateFromBottomAbout') as HTMLElement;
+    const animateFromBottomAbout2 = document.querySelector('.animateFromBottomAbout2') as HTMLElement;
 
     if (animateFromLeftAbout) {
       this.gsapService.animateFromLeft(animateFromLeftAbout);
@@ -30,6 +31,10 @@ export class AboutUsComponent implements OnInit {
 
     if(animateFromBottomAbout) {
       this.gsapService.animateFromBottom(animateFromBottomAbout);
+    }
+
+    if(animateFromBottomAbout2) {
+      this.gsapService.animateFromBottom(animateFromBottomAbout2);
     }
   }
 
