@@ -1,16 +1,17 @@
 section {
   max-width: 140rem;
   margin: 0 auto;
+  height: 100%;
 
 }
 
 .section_title {
   display: flex;
-  margin-top: 16rem;
-  margin-bottom: 6.4rem;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 16rem;
+  margin-bottom: 6rem;
 }
 
 .section_title span {

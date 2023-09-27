@@ -3,6 +3,7 @@ header {
   max-width: 140rem;
   height: 15rem;
   margin: 0 auto;
+  height: 100%;
 }
 
 .nav-bar {

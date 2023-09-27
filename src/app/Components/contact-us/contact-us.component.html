@@ -6,7 +6,7 @@
 
   <div class="section_container">
 
-    <div class="section_data animateFromLeftContact">
+    <div class="section_data">
       <div class="section_info">
         <div class="box">
           <span class="title">
@@ -35,9 +35,9 @@
     <div class="form_container ">
       <form [formGroup]="form" (ngSubmit)="sendForm()">
 
-        <div class="group1 animateFromRightContact">
+        <div class="group1">
 
-          <div class="box_form">
+          <div class="box_form animateinput1">
             <label for="firstName">First Name*</label>
             <input type="text" id="firstName" formControlName="firstName" placeholder="First Name">
             <span *ngIf="form.get('firstName')?.hasError('required') && form.get('firstName')?.touched"
@@ -45,7 +45,7 @@
               required</span>
           </div>
 
-          <div class="box_form">
+          <div class="box_form animateinput2">
             <label for="lastName">Last Name*</label>
             <input type="text" id="lastName" formControlName="lastName" placeholder="Last Name">
             <span *ngIf="form.get('lastName')?.hasError('required') && form.get('lastName')?.touched"
@@ -55,9 +55,9 @@
 
         </div>
 
-        <div class="group1 animateFromTopContact">
+        <div class="group1">
 
-          <div class="box_form">
+          <div class="box_form animateinput3">
             <label for="email">Email*</label>
             <input type="text" id="email" formControlName="email" placeholder="Email address">
             <span *ngIf="form.get('email')?.hasError('required') && form.get('email')?.touched" class="error-msg">Email
@@ -65,14 +65,14 @@
               required</span>
           </div>
 
-          <div class="box_form">
+          <div class="box_form animateinput4">
             <label for="aboutUs">How did you hear about us?</label>
             <input type="text" id="aboutUs" formControlName="aboutUs" placeholder="Facebook,Youtube...">
           </div>
 
         </div>
 
-        <div class="box_form msg animateFromBottomContact">
+        <div class="box_form msg">
           <label for="message">Message</label>
           <input type="text" id="message" formControlName="message" placeholder="Write your message">
         </div>

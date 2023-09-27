@@ -8,7 +8,7 @@
 
   <div class="card_container">
 
-    <div class="box" *ngFor="let card of cardData;">
+    <div *ngFor="let card of cardData let i = index" class="box card" [attr.data-index]="i">
       <div class="box_img">
         <img [src]=card.img alt="">
       </div>

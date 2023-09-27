@@ -1,28 +1,77 @@
-import { Component, OnInit } from '@angular/core';
-import { GsapService } from 'src/app/Shared/Services/gsap.service';
+import { Component, AfterViewInit } from '@angular/core';
+import ScrollReveal from 'scrollreveal';
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent implements AfterViewInit {
 
-  constructor (private gsapService: GsapService) {}
+  private sr!: typeof ScrollReveal;
 
-  ngOnInit() {
-    const animateFromTopFooter = document.querySelector('.animateFromTopFooter') as HTMLElement;
-    const animateFromBottomFooter = document.querySelector('.animateFromBottomFooter') as HTMLElement;
+  constructor () {}
 
-    if(animateFromTopFooter) {
-      this.gsapService.animateFromTop(animateFromTopFooter);
-    }
+  ngAfterViewInit() {
+    this.sr = ScrollReveal();
+    this.sr.reveal('.animated-logo1', {
+      origin: 'left',
+      distance: '150px',
+      duration: 2000,
+      delay: 2000,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
 
-    if(animateFromBottomFooter) {
-      this.gsapService.animateFromBottom(animateFromBottomFooter);
-    }
+    this.sr.reveal('.animated-span1', {
+      origin: 'top',
+      distance: '150px',
+      duration: 2000,
+      delay: 2000,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
+
+    this.sr.reveal('.animated-logo2', {
+      origin: 'top',
+      distance: '150px',
+      duration: 2000,
+      delay: 2000,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
+
+    this.sr.reveal('.animated-nav', {
+      origin: 'right',
+      distance: '150px',
+      duration: 2000,
+      delay: 2000,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
+
+    this.sr.reveal('.animated-logo-nav', {
+      origin: 'bottom',
+      distance: '150px',
+      duration: 2000,
+      delay: 2000,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
+
+    this.sr.reveal('.animated-follow-us', {
+      origin: 'top',
+      distance: '150px',
+      duration: 2000,
+      delay: 2000,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
   }
-
-  onSubmit(){}
-
 }

@@ -1,6 +1,6 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { GsapService } from 'src/app/Shared/Services/gsap.service';
+import ScrollReveal from 'scrollreveal';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -10,9 +10,9 @@ import Swal from 'sweetalert2';
 })
 export class ContactUsComponent implements AfterViewInit {
   form: FormGroup;
+  private sr!: typeof ScrollReveal;
 
-
-  constructor(private fb: FormBuilder, private gsapService: GsapService) {
+  constructor(private fb: FormBuilder) {
     this.form = this.fb.group({
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
@@ -20,6 +20,81 @@ export class ContactUsComponent implements AfterViewInit {
       aboutUs: [''],
       message: ['']
     });
+  }
+
+  ngAfterViewInit() {
+    this.sr = ScrollReveal();
+
+    this.sr.reveal('.section_info', {
+      origin: 'left',
+      distance: '150px',
+      duration: 2000,
+      delay: 2000,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
+
+    this.sr.reveal('.animateinput1', {
+      origin: 'bottom',
+      distance: '150px',
+      duration: 2000,
+      delay: 2000,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
+
+    this.sr.reveal('.animateinput2', {
+      origin: 'top',
+      distance: '150px',
+      duration: 2000,
+      delay: 2000,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
+
+    this.sr.reveal('.animateinput3', {
+      origin: 'left',
+      distance: '150px',
+      duration: 2000,
+      delay: 2000,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
+
+    this.sr.reveal('.animateinput4', {
+      origin: 'right',
+      distance: '150px',
+      duration: 2000,
+      delay: 2000,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
+
+    this.sr.reveal('.msg', {
+      origin: 'bottom',
+      distance: '150px',
+      duration: 2000,
+      delay: 2000,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
+
+    this.sr.reveal('.section_btn', {
+      origin: 'bottom',
+      distance: '150px',
+      duration: 2000,
+      delay: 2000,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
+
   }
 
   sendForm() {
@@ -33,31 +108,6 @@ export class ContactUsComponent implements AfterViewInit {
       })
   }
 }
-
-  ngAfterViewInit() {
-    const animateFromLeftContact = document.querySelector('.animateFromLeftContact') as HTMLElement;
-    const animateFromRightContact = document.querySelector('.animateFromRightContact') as HTMLElement;
-    const animateFromTopContact = document.querySelector('.animateFromTopContact') as HTMLElement;
-    const animateFromBottomContact = document.querySelector('.animateFromBottomContact') as HTMLElement;
-
-
-    if (animateFromLeftContact) {
-      this.gsapService.animateFromLeft(animateFromLeftContact);
-    }
-
-    if(animateFromRightContact) {
-      this.gsapService.animateFromRight(animateFromRightContact);
-    }
-
-    if(animateFromTopContact) {
-      this.gsapService.animateFromTop(animateFromTopContact);
-    }
-
-    if(animateFromBottomContact) {
-      this.gsapService.animateFromBottom(animateFromBottomContact);
-    }
-
-  }
 
 }
 

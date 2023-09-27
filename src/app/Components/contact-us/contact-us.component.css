@@ -1,7 +1,7 @@
 section {
   max-width: 140rem;
+  height: 100%;
   margin: 0 auto;
-  margin-top: 16rem;
   overflow: hidden;
 }
 
@@ -10,7 +10,8 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 6.4rem;
+  margin-top: 16rem;
+  margin-bottom: 6rem;
 }
 
 .section_title span {

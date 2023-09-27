@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, ElementRef, Renderer2 } from '@angular/core';
-import { GsapService } from 'src/app/Shared/Services/gsap.service';
+import ScrollReveal from 'scrollreveal';
 
 import { Tournaments } from './model/tournaments';
 
@@ -10,20 +10,79 @@ import { Tournaments } from './model/tournaments';
 })
 export class TournamentsComponent implements AfterViewInit {
 
-  constructor(private el: ElementRef, private renderer: Renderer2, private gsapService : GsapService) {}
+  private sr!: typeof ScrollReveal;
+
+  constructor(private el: ElementRef, private renderer: Renderer2) {}
 
   ngAfterViewInit() {
     const elements = this.el.nativeElement.querySelectorAll('.item');
     elements.forEach((element: any, index: any) => {
       this.renderer.addClass(element, `item-${index}`);
     });
-    this.gsapService.animateElement1();
-    this.gsapService.animateElement2();
-    this.gsapService.animateElement3();
-    this.gsapService.animateElement4();
-    this.gsapService.animateElement5();
-    this.gsapService.animateElement6();
+    this.sr = ScrollReveal();
+
+    this.sr.reveal('.item-0', {
+      origin: 'left',
+      distance: '150px',
+      duration: 2000,
+      delay: 1000,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
+
+    this.sr.reveal('.item-1', {
+      origin: 'top',
+      distance: '150px',
+      duration: 2000,
+      delay: 1000,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
+
+    this.sr.reveal('.item-2', {
+      origin: 'right',
+      distance: '150px',
+      duration: 2000,
+      delay: 1000,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
+
+    this.sr.reveal('.item-3', {
+      origin: 'right',
+      distance: '150px',
+      duration: 2000,
+      delay: 1000,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
+
+    this.sr.reveal('.item-4', {
+      origin: 'bottom',
+      distance: '150px',
+      duration: 2000,
+      delay: 1000,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
+
+    this.sr.reveal('.item-5', {
+      origin: 'right',
+      distance: '150px',
+      duration: 2000,
+      delay: 1000,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
+
   }
+
 
 
   imageCSGO = '../../../assets/imagem/CardCsGo.png'

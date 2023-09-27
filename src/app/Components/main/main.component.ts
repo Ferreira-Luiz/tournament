@@ -1,36 +1,48 @@
-import { Component, OnInit } from '@angular/core';
-import { GsapService } from 'src/app/Shared/Services/gsap.service';
+import { Component, AfterViewInit } from '@angular/core';
+import ScrollReveal from 'scrollreveal';
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.css']
 })
-export class MainComponent implements OnInit {
+export class MainComponent implements AfterViewInit {
 
-  constructor (private gsapService: GsapService) {}
+  private sr!: typeof ScrollReveal;
 
-  ngOnInit() {
-    const animateFromLeftMain = document.querySelector('.animateFromLeftMain') as HTMLElement;
-    const animateFromRightMain = document.querySelector('.animateFromRightMain') as HTMLElement;
-    const animateFromTopMain = document.querySelector('.animateFromTopMain') as HTMLElement;
-    const animateFromBottomMain = document.querySelector('.animateFromBottomMain') as HTMLElement;
+  constructor () {}
 
-    if (animateFromLeftMain) {
-      this.gsapService.animateFromLeft(animateFromLeftMain);
-    }
+  ngAfterViewInit() {
+    this.sr = ScrollReveal();
+    this.sr.reveal('.h1_txt', {
+      origin: 'right',
+      distance: '150px',
+      duration: 2000,
+      delay: 200,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
 
-    if(animateFromRightMain) {
-      this.gsapService.animateFromRight(animateFromRightMain);
-    }
+    this.sr.reveal('.btn', {
+      origin: 'bottom',
+      distance: '150px',
+      duration: 2000,
+      delay: 200,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
 
-    if(animateFromTopMain) {
-      this.gsapService.animateFromTop(animateFromTopMain);
-    }
-
-    if(animateFromBottomMain) {
-      this.gsapService.animateFromBottom(animateFromBottomMain);
-    }
+    this.sr.reveal('.main_img', {
+      origin: 'top',
+      distance: '150px',
+      duration: 2000,
+      delay: 200,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
   }
 }
 

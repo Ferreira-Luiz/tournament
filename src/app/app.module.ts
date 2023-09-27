@@ -28,7 +28,6 @@ import { FooterComponent } from './Components/footer/footer.component';
     BrowserModule,
     ReactiveFormsModule,
     FormsModule,
-
   ],
   providers: [],
   bootstrap: [AppComponent]

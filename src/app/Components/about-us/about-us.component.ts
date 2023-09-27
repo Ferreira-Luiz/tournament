@@ -1,41 +1,64 @@
-import { Component, OnInit } from '@angular/core';
-import { GsapService } from 'src/app/Shared/Services/gsap.service';
+import { Component, AfterViewInit } from '@angular/core';
+import ScrollReveal from 'scrollreveal';
+
 
 @Component({
   selector: 'app-about-us',
   templateUrl: './about-us.component.html',
   styleUrls: ['./about-us.component.css']
 })
-export class AboutUsComponent implements OnInit {
+export class AboutUsComponent implements AfterViewInit {
 
-  constructor (private gsapService: GsapService) {}
+  private sr!: typeof ScrollReveal;
 
-  ngOnInit() {
-    const animateFromLeftAbout = document.querySelector('.animateFromLeftAbout') as HTMLElement;
-    const animateFromRightAbout = document.querySelector('.animateFromRightAbout') as HTMLElement;
-    const animateFromTopAbout = document.querySelector('.animateFromTopAbout') as HTMLElement;
-    const animateFromBottomAbout = document.querySelector('.animateFromBottomAbout') as HTMLElement;
-    const animateFromBottomAbout2 = document.querySelector('.animateFromBottomAbout2') as HTMLElement;
+  constructor () {}
 
-    if (animateFromLeftAbout) {
-      this.gsapService.animateFromLeft(animateFromLeftAbout);
-    }
+  ngAfterViewInit() {
+    this.sr = ScrollReveal();
 
-    if(animateFromRightAbout) {
-      this.gsapService.animateFromRight(animateFromRightAbout);
-    }
+    this.sr.reveal('.btn-2', {
+      origin: 'right',
+      distance: '150px',
+      duration: 2000,
+      delay: 500,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
 
-    if(animateFromTopAbout) {
-      this.gsapService.animateFromTop(animateFromTopAbout);
-    }
+    this.sr.reveal('.txt', {
+      origin: 'bottom',
+      distance: '150px',
+      duration: 2000,
+      delay: 500,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
 
-    if(animateFromBottomAbout) {
-      this.gsapService.animateFromBottom(animateFromBottomAbout);
-    }
+    this.sr.reveal('.section_box', {
+      origin: 'top',
+      distance: '150px',
+      duration: 2000,
+      delay: 500,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
 
-    if(animateFromBottomAbout2) {
-      this.gsapService.animateFromBottom(animateFromBottomAbout2);
-    }
+    this.sr.reveal('.section_img', {
+      origin: 'left',
+      distance: '150px',
+      duration: 2000,
+      delay: 500,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      scale: 1,
+      viewFactor: 0.5,
+    });
+
   }
 
 }
+
+
+
