@@ -21,7 +21,7 @@ export class MainComponent implements AfterViewInit {
       delay: 200,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.5,
+      viewFactor: 0.3,
     });
 
     this.sr.reveal('.btn', {
@@ -31,7 +31,7 @@ export class MainComponent implements AfterViewInit {
       delay: 200,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.5,
+      viewFactor: 0.3,
     });
 
     this.sr.reveal('.main_img', {
@@ -41,7 +41,7 @@ export class MainComponent implements AfterViewInit {
       delay: 200,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.5,
+      viewFactor: 0.3,
     });
   }
 }

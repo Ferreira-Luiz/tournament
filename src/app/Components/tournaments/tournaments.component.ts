@@ -25,60 +25,60 @@ export class TournamentsComponent implements AfterViewInit {
       origin: 'left',
       distance: '150px',
       duration: 2000,
-      delay: 1000,
+      delay: 500,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.5,
+      viewFactor: 0.3,
     });
 
     this.sr.reveal('.item-1', {
       origin: 'top',
       distance: '150px',
       duration: 2000,
-      delay: 1000,
+      delay: 500,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.5,
+      viewFactor: 0.3,
     });
 
     this.sr.reveal('.item-2', {
       origin: 'right',
       distance: '150px',
       duration: 2000,
-      delay: 1000,
+      delay: 500,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.5,
+      viewFactor: 0.3,
     });
 
     this.sr.reveal('.item-3', {
       origin: 'right',
       distance: '150px',
       duration: 2000,
-      delay: 1000,
+      delay: 500,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.5,
+      viewFactor: 0.3,
     });
 
     this.sr.reveal('.item-4', {
       origin: 'bottom',
       distance: '150px',
       duration: 2000,
-      delay: 1000,
+      delay: 500,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.5,
+      viewFactor: 0.3,
     });
 
     this.sr.reveal('.item-5', {
       origin: 'right',
       distance: '150px',
       duration: 2000,
-      delay: 1000,
+      delay: 500,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.5,
+      viewFactor: 0.3,
     });
 
   }

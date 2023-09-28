@@ -18,60 +18,60 @@ export class FooterComponent implements AfterViewInit {
       origin: 'left',
       distance: '150px',
       duration: 2000,
-      delay: 1000,
+      delay: 500,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.5,
+      viewFactor: 0.3,
     });
 
     this.sr.reveal('.animated-span1', {
       origin: 'top',
       distance: '150px',
       duration: 2000,
-      delay: 1000,
+      delay: 500,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.5,
+      viewFactor: 0.3,
     });
 
     this.sr.reveal('.animated-logo2', {
       origin: 'top',
       distance: '150px',
       duration: 2000,
-      delay: 1000,
+      delay: 500,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.5,
+      viewFactor: 0.3,
     });
 
     this.sr.reveal('.animated-nav', {
       origin: 'right',
       distance: '150px',
       duration: 2000,
-      delay: 1000,
+      delay: 500,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.5,
+      viewFactor: 0.3,
     });
 
     this.sr.reveal('.animated-logo-nav', {
       origin: 'bottom',
       distance: '150px',
       duration: 2000,
-      delay: 1000,
+      delay: 500,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.5,
+      viewFactor: 0.3,
     });
 
     this.sr.reveal('.animated-follow-us', {
       origin: 'top',
       distance: '150px',
       duration: 2000,
-      delay: 1000,
+      delay: 500,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.5,
+      viewFactor: 0.3,
     });
   }
 }
