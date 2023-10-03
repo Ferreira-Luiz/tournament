@@ -29,6 +29,7 @@ export class TournamentsComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
 
     this.sr.reveal('.item-1', {
@@ -39,6 +40,7 @@ export class TournamentsComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
 
     this.sr.reveal('.item-2', {
@@ -49,6 +51,7 @@ export class TournamentsComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
 
     this.sr.reveal('.item-3', {
@@ -59,6 +62,7 @@ export class TournamentsComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
 
     this.sr.reveal('.item-4', {
@@ -69,6 +73,7 @@ export class TournamentsComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
 
     this.sr.reveal('.item-5', {
@@ -79,6 +84,7 @@ export class TournamentsComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
 
   }

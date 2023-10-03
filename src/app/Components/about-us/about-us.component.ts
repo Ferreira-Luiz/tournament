@@ -24,6 +24,7 @@ export class AboutUsComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.5,
+      mobile: false,
     });
 
     this.sr.reveal('.txt', {
@@ -34,6 +35,7 @@ export class AboutUsComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.5,
+      mobile: false,
     });
 
     this.sr.reveal('.section_box', {
@@ -44,6 +46,7 @@ export class AboutUsComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.5,
+      mobile: false,
     });
 
     this.sr.reveal('.section_img', {
@@ -54,6 +57,7 @@ export class AboutUsComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.5,
+      mobile: false,
     });
 
   }

@@ -22,6 +22,7 @@ export class MainComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
 
     this.sr.reveal('.btn', {
@@ -32,6 +33,7 @@ export class MainComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
 
     this.sr.reveal('.main_img', {
@@ -42,6 +44,7 @@ export class MainComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
   }
 }

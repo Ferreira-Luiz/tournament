@@ -22,6 +22,7 @@ export class FooterComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
 
     this.sr.reveal('.animated-span1', {
@@ -32,6 +33,7 @@ export class FooterComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
 
     this.sr.reveal('.animated-logo2', {
@@ -42,6 +44,7 @@ export class FooterComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
 
     this.sr.reveal('.animated-nav', {
@@ -52,6 +55,7 @@ export class FooterComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
 
     this.sr.reveal('.animated-logo-nav', {
@@ -62,6 +66,7 @@ export class FooterComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
 
     this.sr.reveal('.animated-follow-us', {
@@ -72,6 +77,7 @@ export class FooterComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
   }
 }

@@ -26,6 +26,7 @@ export class CardComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
 
     this.sr.reveal('.card-1', {
@@ -36,6 +37,7 @@ export class CardComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
 
     this.sr.reveal('.card-2', {
@@ -46,6 +48,7 @@ export class CardComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
   }
 

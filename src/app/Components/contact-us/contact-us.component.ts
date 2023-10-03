@@ -33,6 +33,7 @@ export class ContactUsComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
 
     this.sr.reveal('.animateinput1', {
@@ -43,6 +44,7 @@ export class ContactUsComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
 
     this.sr.reveal('.animateinput2', {
@@ -53,6 +55,7 @@ export class ContactUsComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
 
     this.sr.reveal('.animateinput3', {
@@ -63,6 +66,7 @@ export class ContactUsComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
 
     this.sr.reveal('.animateinput4', {
@@ -73,6 +77,7 @@ export class ContactUsComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
 
     this.sr.reveal('.msg', {
@@ -83,6 +88,7 @@ export class ContactUsComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
 
     this.sr.reveal('.section_btn', {
@@ -93,6 +99,7 @@ export class ContactUsComponent implements AfterViewInit {
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
       viewFactor: 0.3,
+      mobile: false,
     });
 
   }
