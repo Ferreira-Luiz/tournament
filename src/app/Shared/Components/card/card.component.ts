@@ -21,33 +21,30 @@ export class CardComponent implements AfterViewInit {
     this.sr.reveal('.card-0', {
       origin: 'right',
       distance: '150px',
-      duration: 2000,
-      delay: 500,
+      duration: 800,
+      delay: 200,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.3,
       mobile: false,
     });
 
     this.sr.reveal('.card-1', {
       origin: 'bottom',
       distance: '150px',
-      duration: 2000,
-      delay: 500,
+      duration: 800,
+      delay: 200,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.3,
       mobile: false,
     });
 
     this.sr.reveal('.card-2', {
       origin: 'left',
       distance: '150px',
-      duration: 2000,
-      delay: 500,
+      duration: 800,
+      delay: 200,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.3,
       mobile: false,
     });
   }

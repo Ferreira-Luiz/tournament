@@ -1,23 +1,23 @@
 <div class="background_main">
   <app-header />
-  <app-main />
+  <app-main id="home" />
 </div>
-<app-about-us />
-<app-tournaments />
-<app-contact-us />
+<app-about-us id="aboutUs" />
+<app-tournaments id="tournaments" />
+<app-contact-us id="contactUs" />
 
 
-<app-card [sectionTitle]="'Our Shop'" [cardData]="[
+<app-card id="ourShop" [sectionTitle]="'Our Shop'" [cardData]="[
     { img: '../assets/imagem/Card1.png', subtitle: 'NEW', title: 'Ultimate gaming PC', price: '$1099'},
     { img: '../assets/imagem/Card2.png', subtitle: 'POPULAR', title: 'Xbox gaming controller', price: '$599'},
     { img: '../assets/imagem/Card3.png', subtitle: 'NEW', title: 'Mechanical gaming keyboard', price: '$399'},
   ]" [linkUrl]="'Our Shop'" [btnTxt]="'View More'"></app-card>
 
 
-<app-card [sectionTitle]="'Latest News'" [cardData]="[
+<app-card id="latestNews" [sectionTitle]="'Latest News'" [cardData]="[
     { img: '../assets/imagem/2Card.png', subtitle: 'NEW・Aug 25, 2023', title: 'Pro tips: How to improve your aim and reflexes in eSports'},
     { img: '../assets/imagem/2Card2.png', subtitle: 'Trending・Aug 27, 2023', title: 'Top 10 eSports games to watch and play in 2023'},
     { img: '../assets/imagem/2Card3.png', subtitle: 'Popular・Aug 28, 2023', title: 'The life of a professional eSports gamer'},
   ]" [linkUrl]="'Latest News'" [btnTxt]="'View All'"></app-card>
 
-<app-footer />
+<app-footer id="ourTeam" />

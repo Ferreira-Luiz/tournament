@@ -44,6 +44,10 @@ footer {
   background: linear-gradient(to bottom, #071626, #00000000);
 }
 
+.logo_home {
+  cursor: pointer;
+}
+
 nav a:hover {
   color: var(--green);
 }

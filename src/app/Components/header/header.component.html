@@ -5,12 +5,12 @@
       <li class='logo'><a href='#'><img src='../../../assets/imagem/logotipo.svg' /></a></li>
       <input type='checkbox' id='check' />
       <span class="menu">
-        <li><a href="#">Tournaments</a></li>
-        <li><a href="#">Our Team</a></li>
-        <li><a href="#">Our Sponsors</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a (click)="scrollToSection('aboutUs')">About Us</a></li>
+        <li><a (click)="scrollToSection('tournaments')">Tournaments</a></li>
+        <li><a (click)="scrollToSection('contactUs')">Contact Us</a></li>
+        <li><a (click)="scrollToSection('ourShop')">Our Shop</a></li>
+        <li><a (click)="scrollToSection('latestNews')">Latest News</a></li>
+        <li><a (click)="scrollToSection('ourTeam')">Our Team</a></li>
         <label for="check" class="close-menu"><img src="../../../assets/imagem/Cross.svg"
             alt="menu burguer icon"></label>
       </span>

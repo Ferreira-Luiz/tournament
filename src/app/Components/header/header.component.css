@@ -28,6 +28,7 @@ header {
 }
 
 .menu li a {
+  cursor: pointer;
   display: inline-block;
   text-align: center;
   transition: 0.15s ease-in-out;

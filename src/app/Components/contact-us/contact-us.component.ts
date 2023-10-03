@@ -28,77 +28,70 @@ export class ContactUsComponent implements AfterViewInit {
     this.sr.reveal('.section_info', {
       origin: 'left',
       distance: '150px',
-      duration: 2000,
-      delay: 500,
+      duration: 800,
+      delay: 200,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.3,
       mobile: false,
     });
 
     this.sr.reveal('.animateinput1', {
       origin: 'bottom',
       distance: '150px',
-      duration: 2000,
-      delay: 500,
+      duration: 800,
+      delay: 200,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.3,
       mobile: false,
     });
 
     this.sr.reveal('.animateinput2', {
       origin: 'top',
       distance: '150px',
-      duration: 2000,
-      delay: 500,
+      duration: 800,
+      delay: 200,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.3,
       mobile: false,
     });
 
     this.sr.reveal('.animateinput3', {
       origin: 'left',
       distance: '150px',
-      duration: 2000,
-      delay: 500,
+      duration: 800,
+      delay: 200,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.3,
       mobile: false,
     });
 
     this.sr.reveal('.animateinput4', {
       origin: 'right',
       distance: '150px',
-      duration: 2000,
-      delay: 500,
+      duration: 800,
+      delay: 200,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.3,
       mobile: false,
     });
 
     this.sr.reveal('.msg', {
       origin: 'bottom',
       distance: '150px',
-      duration: 2000,
-      delay: 500,
+      duration: 800,
+      delay: 200,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.3,
       mobile: false,
     });
 
     this.sr.reveal('.section_btn', {
       origin: 'bottom',
       distance: '150px',
-      duration: 2000,
-      delay: 500,
+      duration: 800,
+      delay: 200,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.3,
       mobile: false,
     });
 

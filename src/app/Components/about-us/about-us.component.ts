@@ -19,44 +19,40 @@ export class AboutUsComponent implements AfterViewInit {
     this.sr.reveal('.btn-2', {
       origin: 'right',
       distance: '150px',
-      duration: 2000,
-      delay: 500,
+      duration: 800,
+      delay: 200,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.5,
       mobile: false,
     });
 
     this.sr.reveal('.txt', {
       origin: 'bottom',
       distance: '150px',
-      duration: 2000,
-      delay: 500,
+      duration: 800,
+      delay: 200,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.5,
       mobile: false,
     });
 
     this.sr.reveal('.section_box', {
       origin: 'top',
       distance: '150px',
-      duration: 2000,
-      delay: 500,
+      duration: 800,
+      delay: 200,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.5,
       mobile: false,
     });
 
     this.sr.reveal('.section_img', {
       origin: 'left',
       distance: '150px',
-      duration: 2000,
-      delay: 500,
+      duration: 800,
+      delay: 200,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
       scale: 1,
-      viewFactor: 0.5,
       mobile: false,
     });
 
