@@ -140,6 +140,10 @@ main {
     gap: 4rem;
   }
 
+  .main_txt h1 {
+    margin-top: 3rem;
+  }
+
   .main_img {
     bottom: -4rem;
   }
