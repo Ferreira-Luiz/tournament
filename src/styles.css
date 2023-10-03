@@ -17,11 +17,12 @@ breakpoint-xxlarge: 1440px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #0f3743;
+  background-color: #00eebd;
+
 }
 
 ::-webkit-scrollbar-track {
-  background: #00eebd;
+  background-color: #0f3743;
 }
 
 * {
